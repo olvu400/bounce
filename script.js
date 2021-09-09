@@ -25,17 +25,24 @@ var SpeedX = [1, 3, 4, 5, 2];
 var SpeedY = [1, 3, 4, 5, 2];
 
 function draw() {
-  // stel vulkleur in
-  fill(100, 100, 255);
 
   //teken achtergrond
-  background('blue');
+  background('black');
 
   // teken een cirkel, en laat deze stuiteren
+  fill(255, 255, 255);
   ellipse(x[0], y[0], 80, 80);
+  
+  fill(0, 255, 255);
   ellipse(x[1], y[1], 80, 80);
+  
+  fill(255, 0, 255);
   ellipse(x[2], y[2], 80, 80);
+  
+  fill(255, 255, 0);
   ellipse(x[3], y[3], 80, 80);
+  
+  fill(0, 0, 255);
   ellipse(x[4], y[4], 80, 80);
 
   
@@ -45,16 +52,16 @@ function draw() {
     y[0] = y[0] + SpeedY[0];
     
     //borders
-    if(y[0] === 680) {
+    if(y[0] > 680) {
       SpeedY[0] = SpeedY[0] * -1;
     }
-    if(y[0] === 40) {
+    if(y[0] < 40) {
       SpeedY[0] = SpeedY[0] * -1;
     }
-    if(x[0] === 1240) {
+    if(x[0] > 1240) {
       SpeedX[0] = SpeedX[0] * -1;
     }
-    if(x[0] === 40) {
+    if(x[0] < 40) {
       SpeedX[0] = SpeedX[0] * -1;
     }
 
@@ -64,16 +71,16 @@ function draw() {
     y[1] = y[1] + SpeedY[1];
     
     //borders
-    if(y[1] === 680) {
+    if(y[1] > 680) {
       SpeedY[1] = SpeedY[1] * -1;
     }
-    if(y[1] === 40) {
+    if(y[1] < 40) {
       SpeedY[1] = SpeedY[1] * -1;
     }
-    if(x[1] === 1240) {
+    if(x[1] > 1240) {
       SpeedX[1] = SpeedX[1] * -1;
     }
-    if(x[1] === 40) {
+    if(x[1] < 40) {
       SpeedX[1] = SpeedX[1] * -1;
     }
 
@@ -83,16 +90,16 @@ function draw() {
     y[2] = y[2] + SpeedY[2];
     
     //borders
-    if(y[2] === 680) {
+    if(y[2] > 680) {
       SpeedY[2] = SpeedY[2] * -1;
     }
-    if(y[2] === 40) {
+    if(y[2] < 40) {
       SpeedY[2] = SpeedY[2] * -1;
     }
-    if(x[2] === 1240) {
+    if(x[2] > 1240) {
       SpeedX[2] = SpeedX[2] * -1;
     }
-    if(x[2] === 40) {
+    if(x[2] < 40) {
       SpeedX[2] = SpeedX[2] * -1;
     }
 
@@ -102,16 +109,16 @@ function draw() {
     y[3] = y[3] + SpeedY[3];
     
     //borders
-    if(y[3] === 680) {
+    if(y[3] > 680) {
       SpeedY[3] = SpeedY[3] * -1;
     }
-    if(y[3] === 40) {
+    if(y[3] < 40) {
       SpeedY[3] = SpeedY[3] * -1;
     }
-    if(x[3] === 1240) {
+    if(x[3] > 1240) {
       SpeedX[3] = SpeedX[3] * -1;
     }
-    if(x[3] === 40) {
+    if(x[3] < 40) {
       SpeedX[3] = SpeedX[3] * -1;
     }
 
@@ -121,16 +128,16 @@ function draw() {
     y[4] = y[4]+ SpeedY[4];
     
     //borders
-    if(y[4] === 680) {
+    if(y[4] > 680) {
       SpeedY[4] = SpeedY[4] * -1;
     }
-    if(y[4] === 40) {
+    if(y[4] < 40) {
       SpeedY[4] = SpeedY[4] * -1;
     }
-    if(x[4] === 1240) {
+    if(x[4] > 1240) {
       SpeedX[4] = SpeedX[4] * -1;
     }
-    if(x[4] === 40) {
+    if(x[4] < 40) {
       SpeedX[4] = SpeedX[4] * -1;
     }
   
