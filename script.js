@@ -19,8 +19,10 @@ function setup() {
     var bal = new Bal(randomx, randomy, randomSpeedX, randomSpeedY);
 
     ballen.push(bal);
-  }
 
+  }
+  
+  
 
 }
 
